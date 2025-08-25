@@ -1,0 +1,97 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Log in - Wardiere
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="min-h-screen flex flex-col md:flex-row">
+   <!-- Left side -->
+   <div class="w-full md:w-1/2 bg-white flex flex-col">
+    <header class="flex items-center justify-between px-8 py-6">
+     <div class="text-purple-900 font-bold text-2xl select-none">
+      Wardiere
+     </div>
+     <nav class="hidden sm:flex space-x-6 text-xs font-semibold tracking-wide text-black">
+      <a class="hover:underline" href="#">
+       HOME
+      </a>
+      <a class="hover:underline" href="#">
+       ABOUT US
+      </a>
+      <a class="hover:underline" href="#">
+       CONTACT
+      </a>
+      <a class="font-bold underline underline-offset-4 decoration-2 decoration-purple-900" href="#">
+       LOG IN
+      </a>
+     </nav>
+    </header>
+    <main class="flex-grow px-8 sm:px-16 md:px-20 lg:px-28 xl:px-36 flex flex-col justify-center max-w-md w-full mx-auto">
+     <h1 class="text-purple-900 font-semibold text-3xl mb-8 select-none">
+      Log in
+     </h1>
+     <form class="space-y-4">
+      <div>
+       <div class="relative">
+        <span class="absolute inset-y-0 left-3 flex items-center text-gray-600 text-sm">
+         <i class="fas fa-user">
+         </i>
+        </span>
+        <input class="w-full border border-purple-900 rounded-full py-2.5 pl-10 pr-4 text-xs text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-900" placeholder="Username" type="text"/>
+       </div>
+      </div>
+      <div>
+       <div class="relative">
+        <span class="absolute inset-y-0 left-3 flex items-center text-gray-600 text-sm">
+         <i class="fas fa-lock">
+         </i>
+        </span>
+        <input class="w-full border border-gray-200 rounded-full py-2.5 pl-10 pr-10 text-xs text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-900 bg-gray-100" placeholder="Password" type="password"/>
+        <span class="absolute inset-y-0 right-3 flex items-center text-gray-400 text-xs cursor-pointer select-none">
+         <i class="fas fa-eye">
+         </i>
+        </span>
+       </div>
+      </div>
+      <div class="flex justify-between text-xs text-gray-500 font-light">
+       <label class="flex items-center space-x-1 select-none">
+        <input class="w-3 h-3 border border-gray-400 rounded-sm" type="checkbox"/>
+        <span class="italic">
+         Remember Me
+        </span>
+       </label>
+       <a class="italic hover:underline" href="#">
+        Forgot Password?
+       </a>
+      </div>
+      <button class="w-full bg-purple-900 text-white text-xs font-semibold rounded-full py-2.5 mt-2" type="submit">
+       Log in
+      </button>
+     </form>
+     <p class="text-xs text-purple-900 mt-4 select-none">
+      or
+      <a class="font-semibold hover:underline" href="#">
+       Sign up
+      </a>
+     </p>
+    </main>
+   </div>
+   <!-- Right side -->
+   <div class="hidden md:block md:w-1/2 bg-purple-900 relative overflow-hidden rounded-tr-3xl rounded-br-3xl">
+    <img alt="Abstract purple background with layered rounded shapes and shadows" class="w-full h-full object-cover rounded-tr-3xl rounded-br-3xl" height="800" src="https://storage.googleapis.com/a1aa/image/ac707346-1dd5-4730-2a2c-f761a37b45c9.jpg" width="600"/>
+   </div>
+  </div>
+ </body>
+</html>
