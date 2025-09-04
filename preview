@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head><title>Pilih Kolom SMS Blast</title></head>
+<body>
+<h2>Pilih Kolom Nomor Telepon dan Pesan</h2>
+
+<form action="/send_sms" method="post">
+  <input type="hidden" name="filename" value="{{ filename }}">
+  <label>Kolom Nomor Telepon:</label>
+  <select name="kolom_nomor" required>
+    {% for col in columns %}
+      <option value="{{ col }}">{{ col }}</option>
+    {% endfor %}
+  </select><br><br>
+
+  <label>Kolom Isi Pesan:</label>
+  <select name="kolom_pesan" required>
+    {% for col in columns %}
+      <option value="{{ col }}">{{ col }}</option>
+    {% endfor %}
+  </select><br><br>
+
+  <button type="submit">Kirim SMS</button>
+</form>
+
+</body>
+</html>

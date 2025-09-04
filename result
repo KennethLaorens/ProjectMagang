@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><title>Hasil SMS Blast</title></head>
+<body>
+<h2>Hasil Pengiriman SMS Blast</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr>
+    <th>Nomor</th>
+    <th>Pesan</th>
+    <th>Status</th>
+  </tr>
+  {% for r in hasil %}
+  <tr>
+    <td>{{ r.nomor }}</td>
+    <td>{{ r.pesan }}</td>
+    <td>{{ r.status }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<a href="/">Kembali ke Upload</a>
+</body>
+</html>
